@@ -44,9 +44,6 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { motion, AnimatePresence } from "framer-motion";
-
-// ... (keep the existing interfaces and networks array)
-
 interface Transaction {
   transaction_hash: string;
   from_address: string;
@@ -70,7 +67,6 @@ const networks: Network[] = [
   { id: "10", name: "Optimism", symbol: "OP", color: "#FF0420" },
   { id: "42161", name: "Arbitrum", symbol: "ARB", color: "#28A0F0" },
   { id: "250", name: "Fantom", symbol: "FTM", color: "#1969FF" },
-  //  { id: "100", name: "Gnosis", symbol: "xDAI", color: "#04795B" },
 ];
 
 const TaxReporter: React.FC = () => {
@@ -400,7 +396,6 @@ const TaxReporter: React.FC = () => {
                     <CardContent>
                       <ResponsiveContainer width="100%" height={400}>
                         <AreaChart data={chartData}>
-                          {/* ... (keep the existing chart components) */}
                           <CartesianGrid strokeDasharray="3 3" />
                           <XAxis dataKey="date" />
                           <YAxis />
