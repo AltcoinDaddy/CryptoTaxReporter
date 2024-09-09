@@ -104,6 +104,8 @@ const TaxReporter: React.FC = () => {
             address: address,
             from_timestamp: Math.floor(startDate.getTime() / 1000),
             end_timestamp: Math.floor(endDate.getTime() / 1000),
+            page: 1,
+            limit: 100,
           },
           headers: {
             "x-api-key": process.env.NEXT_PUBLIC_CHAINBASE_KEY,
