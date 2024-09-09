@@ -1,0 +1,22 @@
+meta {
+  name: Get account
+  type: http
+  seq: 2
+}
+
+get {
+  url: https://api.chainbase.online/v1/account/txs?chain_id=43114&address=0xCddc5d0Ebeb71a08ffF26909AA6c0d4e256b4fE1&from_timestamp=1704096000&end_timestamp=1725809218
+  body: none
+  auth: none
+}
+
+params:query {
+  chain_id: 43114
+  address: 0xCddc5d0Ebeb71a08ffF26909AA6c0d4e256b4fE1
+  from_timestamp: 1704096000
+  end_timestamp: 1725809218
+}
+
+headers {
+  x-api-key: 2liZ59rOMCrXUfqIGLxcox8h6xr
+}
